@@ -5,7 +5,10 @@
     color: #fff;
     text-align: center;
     h2{
-        padding-top: 2rem;
+        padding-top: 4rem;
+    }
+    p{
+        padding: 2rem;
     }    
     form{
         input{
@@ -29,6 +32,16 @@
         }
         p{
             font-size: 13px;
+            padding: 10px;
         }
+    }
+}
+@media screen and (min-width: 350px) and (max-width:800px){
+    .contatoComponent{
+        form{
+            input{
+                width: 60%;
+            }
+        }       
     }
 }

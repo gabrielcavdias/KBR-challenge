@@ -1,5 +1,15 @@
 .videoExplicativoComponent{
+    position: relative;
+    .interseção{
+        position: absolute;
+        width: 10%;
+        max-width: 120px;
+        top: -120px;
+        left: 46%;
+    }
     h2,p,h3{
+        position: inherit;
+        z-index: 2;
         text-align: center;
     }
     img{
@@ -58,6 +68,8 @@
                 cursor: pointer;
                 &.sliderActive{
                     background-color: #FCA70C;
+                    width: 17px;
+                    border-radius: 30px;
                     transition: 1s;
                 }
             }
@@ -73,5 +85,37 @@
     to{
         transform: translateX(0);
         opacity: 1;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width:800px){
+    .videoExplicativoComponent{
+        .interseção{
+            display: none;
+        }
+        >p{
+            width: 90%;
+        }
+        img{
+            width: 90%;
+        }
+        &__slider{
+            &__wrapper{
+                flex-direction: column;
+                .sliderCard{
+                    margin-top: 6rem;
+                }               
+            }
+            &__controls{
+                width: 50%;
+                span{
+                    width: 20px;
+                    height: 20px;
+                    &.sliderActive{
+                        width: 32px;
+                    }
+                }
+            }           
+        }       
     }
 }

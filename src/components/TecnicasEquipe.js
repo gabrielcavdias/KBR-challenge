@@ -31,7 +31,7 @@ const TecnicasEquipe = () => {
             </p>
             <div className="tecnicasEquipeComponent__modelos">
                 <div>
-                    <img src={teamwork} alt="" />
+                    <img src={teamwork} alt="Três colegas de trabalho olham para notebook" />
                 </div>
                 <div>
                     <article>
@@ -46,7 +46,7 @@ const TecnicasEquipe = () => {
                             "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
                             accompanied by English versions from the 1914 translation by H. Rackham.
                         </p>
-                        <button className="btnPadrao btnPadrao--azul">Fale com nossa equipe</button>
+                        <a href="#contato" className="btnPadrao btnPadrao--azul">Fale com nossa equipe</a>
                     </article>
 
                 </div>

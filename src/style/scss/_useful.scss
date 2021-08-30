@@ -5,6 +5,10 @@
 @mixin btnVariation($from, $to, $name){
     &#{$name}{
        background-image: linear-gradient(to right, $from, $to);
+       //Estilos para caso btn seja um <a>
+       text-decoration: none;
+       display: inline;
+       //
        &:hover{
            background-image: linear-gradient(to right, lighten($from, 10%), lighten($to, 10%));
        }

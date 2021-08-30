@@ -1,10 +1,11 @@
 import React from 'react'
 import guanabara from '../assets/guanabara.jpg'
 import DepoimentoSlider from './DepoimentosSlider'
-
+import videoIntercede from '../assets/video_intercede.png'
 const VideoExplicativo = () => {
     return (
         <section className="videoExplicativoComponent">
+            <img className="interseção" src={videoIntercede} alt="Elemento visual de divisão de páginas" />
             <h2>Where can I get some?</h2>
             <p>
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,

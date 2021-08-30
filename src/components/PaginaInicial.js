@@ -11,7 +11,7 @@ const PaginaInicial = () => {
                 <p>
                     It has survived not only five centuries, <span className="txtDestaque">but also the leap into electronic typesetting</span>, remaining essentially unchanged. It  
                 </p>
-                <button className="btnPadrao btnPadrao--amarelo">Solicite seu orçamento agora</button>
+                <a href="#contato" className="btnPadrao btnPadrao--amarelo">Solicite seu orçamento agora</a>
             </article>
             <div className="splashworkers">
                 <img src={splashworkers} alt="arte em estilo chapado com funcionários de uma agência de marketing" />

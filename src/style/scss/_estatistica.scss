@@ -1,4 +1,5 @@
 .estatisticaComponent{
+    background-image: linear-gradient(transparent, #FFFFFF, #E3F3FF);
     >img{
         display: block;
         margin: 2rem auto;
@@ -17,8 +18,8 @@
         }
     }
     &__wrapper{
-        background-image: linear-gradient(transparent, #FFFFFF, #E3F3FF);
         width: 100%;
+        max-width: 1200px;
         padding: 4rem 0 4rem 0;
         @include flex-around();
         margin: 6rem auto 0 auto;
@@ -36,6 +37,25 @@
             }
             img{
                 width: 60px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width:800px){
+    .estatisticaComponent{
+        >img{
+            width: 100%;
+        }
+        article{
+            width: 80%;
+        }
+        &__wrapper{
+            flex-direction: column;
+            gap: 2rem;
+            .estatisticasCard{
+                margin: 0 auto;
+                width: 80%;
             }
         }
     }

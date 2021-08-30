@@ -11,6 +11,8 @@ const Portfolio = () => {
                     The point of using Lorem Ipsum is that it has a more-or-less normal distribution
                 </p>
             </article>
+            {/*Não encontrei uma forma de fazer esse elemento funcionar em vários tamanhos de tela*/}
+            {/* <div className="layoutElement"></div> */}
             <div className="portfolioComponent__wrapper">
                 <PortfolioSwitcher />
                 <div className="portfolioComponent__wrapper__description">
@@ -21,7 +23,7 @@ const Portfolio = () => {
                             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,
                             or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum
                         </p>
-                        <button className="btnPadrao btnPadrao--azul">Gostou? Fale conosco</button>
+                        <a href="#contato" className="btnPadrao btnPadrao--azul">Gostou? Fale conosco</a>
                     </article>
                     <article>
                         <h2>Why do we use it?</h2>

@@ -1,13 +1,14 @@
-
 .inicioComponent{
     background-image: linear-gradient(#E3F3FF, #FFFFFF);
+    clip-path: polygon(16% 0, 100% 0, 100% 100%, 8% 100%, 0 100%, 0 60%, 5% 53%, 0 35%, 0 4%, 3% 20%);
+    position: relative;
     &__header{
         padding-top: 10px;
         @include flex-around;
         &__btnContainer{
             display: flex;
             align-items: flex-start;
-            button{
+            button, a{
                 margin: 1em;
             }
         }
@@ -44,6 +45,45 @@
             img{
                 max-width: 600px;
             }
+        }
+    }
+}
+@media screen and (min-width: 350px) and (max-width:800px){
+    .inicioComponent{
+        clip-path: none;
+        &__header{
+            flex-direction: column;
+            &>img{
+                margin: 0 auto;
+            }
+            a{
+                img{
+                    display: none;
+                }
+            }
+        }
+        &__paginaInicial{
+            flex-direction: column;
+            article{
+                h1{
+                    text-align: center;
+                }
+                p{
+                    width: 100%;
+                }
+                button{
+                    display: block;
+                    margin: 1rem auto;
+                }
+                margin-bottom: 1rem;
+            }
+            .splashworkers{
+                img{
+                    width: 100%;
+                }
+                margin-bottom: 1rem;
+            }
+
         }
     }
 }

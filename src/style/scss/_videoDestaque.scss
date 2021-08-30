@@ -86,3 +86,38 @@
         }
     }
 }
+@media screen and (min-width: 350px) and (max-width:800px){
+    .videoDestaqueComponent{
+        flex-direction: column;
+        &>section{
+            width:100vw;
+        }
+        &__depoimentos{
+            h2,p{
+                width: 80%;
+            }
+            &__videos{
+                width: 90%;
+                margin: 1rem auto;
+                img{
+                    width: 100%;
+                }
+            }
+            &__controls{
+                right: 0;
+            }
+        }
+        &__noticias{
+            .portais{
+                flex-direction: column;
+                width: 50%;
+                margin: 0 auto;
+                div{
+                    &:hover{
+                        transform: scale(0.9);
+                    }
+                }
+            }
+        }
+    }
+}
