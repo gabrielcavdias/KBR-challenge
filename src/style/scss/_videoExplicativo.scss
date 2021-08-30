@@ -1,0 +1,77 @@
+.videoExplicativoComponent{
+    h2,p,h3{
+        text-align: center;
+    }
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+    h2{
+        font-size: 2.2rem;
+        margin-top: 3rem;
+    }
+    >p{
+        width: 70%;
+        margin: 2rem auto;
+    }
+    &__slider{
+        .cardAnimar{
+            animation-name: slide;
+            animation-duration: .4s;
+        }
+        &__wrapper{
+            display: flex;
+            justify-content: space-around;
+            gap: 1rem;
+            width: 90%;
+            margin: 0 auto;
+            .sliderCard{
+                margin-top: 3rem;
+                position: relative;
+                color: #212529;
+                border: 1px solid #EFEFEF;
+                background-color: #F9F9F9;
+                border-radius: 10px;
+                h3{
+                    margin: 2.5rem 0;
+                }
+                img{
+                    border-radius: 50%;
+                    max-width: 91px;
+                    position: absolute;
+                    left: 40%;
+                    top: -30%;
+                }
+            }
+        }
+        &__controls{
+            padding: 10px;
+            width: 5%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            span{
+                border: 1px solid #FCA70C;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                cursor: pointer;
+                &.sliderActive{
+                    background-color: #FCA70C;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

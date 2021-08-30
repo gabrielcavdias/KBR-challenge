@@ -1,0 +1,34 @@
+.contatoComponent{
+    margin-top: 1.5rem;
+    background-color: #220e68;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    h2{
+        padding-top: 2rem;
+    }    
+    form{
+        input{
+            display: block;
+            margin: 1rem auto;
+            border: 0;
+            border-radius: 5px;
+            padding: 5px;
+            width: 40%;
+            height: 35px;
+        }
+        button{
+            margin: 1rem auto;
+        }
+
+    }
+    footer{
+        margin-top: 2rem;
+        img{
+            max-width: 60px;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+}

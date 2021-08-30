@@ -1,0 +1,49 @@
+
+.inicioComponent{
+    background-image: linear-gradient(#E3F3FF, #FFFFFF);
+    &__header{
+        padding-top: 10px;
+        @include flex-around;
+        &__btnContainer{
+            display: flex;
+            align-items: flex-start;
+            button{
+                margin: 1em;
+            }
+        }
+        //Logo da empresa
+        &>img{
+            display: block;
+            width: 10%;
+            min-width: 83px;
+        }
+    }
+    
+    &__paginaInicial{
+        width: 90%;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        h1{
+            font-size: 2.2rem;
+        }
+        article{
+            
+            p{
+                width: 80%;
+                font-size: 1.1rem;
+                margin: 1rem 0;
+                line-height: 30px; 
+            }
+            button{
+                margin-top: 1.5rem;
+            }
+        }
+        .splashworkers{
+            img{
+                max-width: 600px;
+            }
+        }
+    }
+}
